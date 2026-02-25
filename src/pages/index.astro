@@ -1,5 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { images } from "../scripts/data";
 ---
 
-<Layout />
+<Layout>
+  <div class="main__wrapper">
+    <ul class="main__list">
+      {
+        images.map((image) => (
+          <li class="list__item">
+            <div class="item__image__wrapper gl">
+              <img src={image} alt="" />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>
