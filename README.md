@@ -1,6 +1,6 @@
 # Pixellated Image WebGL
 
-[Image Thumbnail](/public/images/thumbnail.png)
+![Image Thumbnail](/public/images/thumbnail.png)
 
 ## Credits
 
