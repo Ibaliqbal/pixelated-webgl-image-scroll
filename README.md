@@ -5,4 +5,4 @@
 ## Credits
 
 - Image [Unspalsh](https://unsplash.com/)
-- References : (Codrops Yuri Artiukh)[https://tympanus.net/codrops/2024/02/07/on-scroll-revealing-webgl-image-explorations/]
+- References : [Codrops Yuri Artiukh](https://tympanus.net/codrops/2024/02/07/on-scroll-revealing-webgl-image-explorations/)
