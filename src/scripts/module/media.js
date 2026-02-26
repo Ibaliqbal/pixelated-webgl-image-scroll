@@ -79,9 +79,9 @@ class Media {
       scrollTrigger: {
         trigger: this.element,
         start: "top 95%",
-        toggleActions: "play none none none",
-        once: true,
-        invalidateOnRefresh: true,
+        toggleActions: "play reset restart reset",
+        // once: true,
+        // invalidateOnRefresh: true,
       },
     });
   }
