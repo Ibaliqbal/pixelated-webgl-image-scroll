@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Scroll from "./libs/scroll";
-import { select, selectAll } from "./utils";
+import { preloadImages, select, selectAll } from "./utils";
 import * as THREE from "three";
 import Media from "./module/media";
 
@@ -120,7 +120,7 @@ class App {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
   }
@@ -131,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.registerPlugin(ScrollTrigger);
+
+  await preloadImages(".item__image__wrapper img");
 
   new App();
 });
